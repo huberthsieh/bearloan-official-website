@@ -1,0 +1,47 @@
+.activity
+    border: solid 2px green
+
+    .container
+        position: relative
+        z-index: 1
+        overflow: hidden
+
+    &__content
+        margin-bottom: 25px
+        p
+            font-size: 1.8rem
+            text-align: center
+            +mobile()
+                font-size: 1.6rem
+                padding: 0 30px
+
+    &__text
+        border: solid 2px orange
+        padding: 10px 40px
+        color: white
+        background-color: $main
+        font-size: 2rem
+        font-weight: 500
+        width: 100%
+        text-align: center
+
+    &__list
+        border: solid 2px blue
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        +mobile()
+            display: block
+            padding: 0 30px
+
+    &__item
+        border: solid 2px yellow
+        background-color: white
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        width: calc(100% / 3 - 15px)
+        margin-bottom: 30px
+        +mobile()
+            width: 100%

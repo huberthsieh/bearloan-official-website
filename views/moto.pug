@@ -1,0 +1,48 @@
+include common/_googleMap
+include index/_banner
+include index/_about
+include index/_data
+include index/_advantage
+include index/_team
+include index/_customer
+include index/_notice
+include index/_contact
+
+//include components/section/_introduction
+//include components/section/_team
+//include components/section/_background
+//include components/section/_Banner
+
+doctype html
+html(lang="zh-Hant")
+
+    // Include Common Head
+    include common/_head
+
+    // Main
+    body
+        include ./common/_header
+
+        main
+            #content.content
+                +banner()
+
+                +about()
+
+                +data()
+
+                +advantage()
+
+                +team()
+
+                +customer()
+
+                +notice()
+
+                +contact()
+
+            +map()
+
+        include common/_footer
+
+        include common/_script

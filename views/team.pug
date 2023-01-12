@@ -1,0 +1,30 @@
+include team/_banner
+include team/_member
+include team/_notice
+include team/_contact
+
+doctype html
+html(lang="zh-Hant")
+
+    // Include Common Head
+    include common/_head
+
+    // Main
+    body(data-page="team")
+        include ./common/_header
+
+        main
+            #content.content
+                +banner()
+
+                +member()
+
+                +notice()
+
+                +contact()
+
+
+
+        include common/_footer
+
+        include common/_script

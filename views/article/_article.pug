@@ -1,0 +1,53 @@
+mixin article
+    .article
+        .container
+
+            // 類別Tabs
+            ul#article__tabs.article__tabs
+                li.article__tabs__item.active 成功案例
+                li.article__tabs__item 貸款資訊
+                li.article__tabs__item 生活資訊
+                li.article__tabs__item 金融財經
+
+
+            // 文章列表容器
+            .article__content
+
+                // 文章列表
+                ul.article__list
+                    mixin item(date, title, des)
+                        li&attributes(attributes)
+                            a.article__item(href="article_detail.html")
+                                figure.article__item__inner
+                                    img(src="https://fakeimg.pl/600x450/407bff/000/" alt="熊蓋厚貸文章")
+                                    figcaption.article__item__txt
+                                        .article__date #{date}
+                                        .article__title #{ title }
+                                        .article__description #{ des }
+
+                    +item("2022.11.09", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！")
+                    +item("2022.11.09", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！")
+                    +item("2022.11.09", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！")
+                    +item("2022.11.09", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！")
+                    +item("2022.11.09", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！")
+                    +item("2022.11.09", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！")
+                    +item("2022.11.09", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！")
+                    +item("2022.11.09", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！")
+                    +item("2022.11.09", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！")
+                    +item("2022.11.09", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！", "2022最新！機車貸款10大重點，順利核貸55萬就看這篇！")
+
+            //-
+                數量切換，ㄧ頁10筆
+            ul#article__pages.article__pages
+                li.article__pages__item.active
+                    span 1
+                li.article__pages__item
+                    span 2
+                li.article__pages__item
+                    span 3
+                li.article__pages__item
+                    span 4
+
+                // 切換顯示數字往下一位
+                li#article-arrow.article__pages__item
+                    span.article__arrow

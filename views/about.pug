@@ -1,0 +1,30 @@
+include common/_googleMap
+include about/_banner
+include about/_history
+include about/_philosophy
+include about/_activity
+
+doctype html
+html(lang="zh-Hant")
+
+    // Include Common Head
+    include common/_head
+
+    // Main
+    body
+        include ./common/_header
+
+        main
+            #content.content
+                +banner()
+
+                +history()
+
+                +philosophy()
+
+                +activity()
+
+
+        include common/_footer
+
+        include common/_script

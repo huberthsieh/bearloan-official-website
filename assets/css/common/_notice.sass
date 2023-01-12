@@ -1,0 +1,156 @@
+.notice
+    border: solid 2px green
+    background: url("../images/index/banner-data.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center bottom
+    position: relative
+    padding-bottom: 50px
+
+    &:before
+        content: ""
+        +size(100%, 100%)
+        position: absolute
+        left: 0
+        top: 0
+        background: linear-gradient(to bottom, #04215A, #035DAC)
+        z-index: 0
+        opacity: 0.95
+
+    .container
+        position: relative
+        z-index: 1
+        overflow: hidden
+
+        .title__wrap
+            color: white
+
+    &__content
+        margin-bottom: 25px
+        color: white
+        p
+            font-size: 1.8rem
+            margin-bottom: 25px
+            color: white
+            text-align: center
+
+            &.color--yellow
+                color: $yellow
+
+            +mobile()
+                font-size: 1.6rem
+                padding: 0 30px
+
+    &__text
+        padding: 10px 0
+        color: white
+        font-size: 2rem
+        font-weight: 500
+        width: 100%
+        text-align: center
+        +mobile()
+            font-size: 1.6rem
+
+        span
+            width: 100%
+            display: block
+            font-size: 2rem
+            font-weight: 500
+            +mobile()
+                font-size: 1.6rem
+
+    &__list
+        display: flex
+        justify-content: space-between
+        +mobile()
+            padding: 0 30px
+            flex-wrap: wrap
+            justify-content: center
+
+    &__item
+        color: white
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        +mobile()
+            width: 50%
+            margin-bottom: 30px
+
+    &__icon
+        border: solid 1px white
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        +size(190px, 190px)
+
+        +mobile()
+            +size(130px, 130px)
+
+        i
+            &:before
+                font-size: 10rem
+                +mobile()
+                    font-size: 6.6rem
+
+    &__link
+        +size(190px, 190px)
+        border: solid 1px white
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 50px
+        position: relative
+
+        .notice__text
+            transform: translateX(-10px)
+
+        +mobile()
+            +size(130px, 130px)
+
+        &:before
+            content: ""
+            display: block
+            +size(20px, 20px)
+            border: solid 2px white
+            border-left: none
+            border-top: none
+            position: absolute
+            right: 30px
+            top: 50%
+            transform: translateY(-50%) rotate(-45deg)
+            +mobile()
+                right: 20px
+
+
+
+body[data-page="contact"]
+    .notice
+        background: white
+        &:before
+            content: none
+
+        .title__wrap
+            color: $main
+
+        &__content
+            p
+                color: black
+                &.color--blue
+                    color: $blue
+
+        &__item
+            color: $main
+
+        &__icon
+            border-color: $main
+
+        &__link
+            border-color: $main
+            &:before
+                border-color: $main
+
+        &__text
+            color: $main

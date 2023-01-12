@@ -1,0 +1,93 @@
+.about
+    background: url("../images/index/banner-about.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center top
+    position: relative
+
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        width: 100%
+        height: 335px
+        background-image: linear-gradient(180deg, #000, hsla(0,0%,100%,0))
+        pointer-events: none
+        z-index: 2
+
+        +mobile()
+            content: none
+
+    p
+        font-size: 3.6rem
+        color: white
+        text-align: center
+        transition: transform .3s
+        +mobile()
+            font-size: 2rem
+
+    .text__top
+        position: absolute
+        left: 50%
+        top: 0
+        transform: translateX(-50%)
+        z-index: 2
+        +mobile()
+            position: static
+            transform: unset
+            background-color: rgba($main, .4)
+
+        p
+            padding: 20px 0
+            +mobile()
+                border-bottom: solid 1px white
+
+
+    .text__bottom
+        display: flex
+
+        +mobile()
+            display: block
+
+        & > *
+            width: 25%
+            +mobile()
+                width: 100%
+
+        a
+            border-right: solid 1px white
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            padding: 240px 0
+            background-color: rgba($main, .4)
+            transition: background-color .3s
+
+            +mobile()
+                border-right: none
+                border-bottom: solid 1px white
+                padding: 60px 0
+
+            p
+                position: relative
+                z-index: 0
+
+            &:last-child
+                border: none
+
+            //&:before
+                content: ""
+                +size(100%, 100%)
+                position: absolute
+                left: 0
+                top: 0
+                background-color: rgba($main, .4)
+                z-index: 0
+
+            &:hover
+                background-color: rgba($main, .7)
+
+                p
+                    transform: translateY(-15px)
+            

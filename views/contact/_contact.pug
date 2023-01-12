@@ -1,0 +1,30 @@
+mixin contact
+    section.contact
+        .container.d-block
+            .contact__content
+                p 我們的專業團隊能快速找到客戶問題所在，諮詢保證免費，問到滿意再辦理。您也可以撥打免付費專線 0800-818188，或是加入LINE 一對一客服。
+
+
+            .contact-form.form__container
+                form(id="form" class="form" method="post" action="your_url" novalidate="novalidate")
+                    .form__item
+                        input(name="name" placeholder="稱呼(必填)：")
+
+                    .form__item
+                        input(placeholder="手機(必填)：")
+
+                    .form__item.pr-20
+                        select
+                            option(value="" disabled selected hidden).placeholder 諮詢項目：
+                            option() 機車
+                            option 汽車
+                            option 房二胎
+
+                    .form__item
+                        input(placeholder="車牌號碼：")
+
+                    .form__item
+                        textarea(name="" placeholder="諮詢 / 備註")
+
+                    .link__wrap.link--yellow
+                        a(href="article.html").link__more 確定送出

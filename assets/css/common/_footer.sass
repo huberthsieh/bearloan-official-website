@@ -1,0 +1,197 @@
+.footer
+    background: $main url("../images/bg-small.png")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    position: relative
+    padding: 30px 0
+    +mobile
+        background: $main url("../images/bg-small-m.png")
+        padding-bottom: 71px
+
+    &:before
+        content: ""
+        +size(100%, 100%)
+        position: absolute
+        left: 0
+        top: 0
+        background: linear-gradient(to bottom, #04215A, #035DAC)
+        z-index: 0
+        opacity: 0.95
+
+    &__inner
+        max-width: 1240px
+        width: 100%
+        margin: 0 auto
+        padding: 0 30px
+        position: relative
+        z-index: 2
+
+    .logo__wrap
+        display: block
+        text-align: center
+        +mobile()
+            display: flex
+            justify-content: center
+            padding: 15px 0
+
+        .img
+            display: block
+            +size(160px, 80px)
+            background-image: url("../images/logo-white.svg")
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: contain
+            +mobile
+                width: 188px
+
+    &__top
+        display: flex
+        align-items: center
+        border: solid 2px white
+        +mobile()
+            display: block
+
+        ul
+            li
+                display: flex
+                align-items: center
+                margin-bottom: 5px
+                +mobile()
+                    margin-bottom: 10px
+
+                p
+                    font-size: 1.6rem
+                    white-space: nowrap
+                    +mobile()
+                        font-size: 1.3rem
+
+            .line
+                padding: 0 5px
+
+            i
+                +size(20px, 20px)
+                margin-right: 5px
+                text-align: center
+                font-size: 2rem
+
+    &__bottom
+        color: white
+        position: relative
+        border: solid 2px white
+        padding-top: 80px
+        text-align: center
+        +mobile()
+            padding-top: 30px
+            a
+                display: block
+                width: 100%
+
+        .privacy__btn
+            margin-left: 5px
+            padding-left: 1px
+            position: relative
+            +mobile()
+                margin-left: 0
+                padding-left: 0
+                margin-top: 10px
+
+        p
+            font-size: 1.6rem
+            +mobile()
+                font-size: 1.3rem
+
+    &__left, &__right
+        border: solid 2px rosybrown
+        display: flex
+        +mobile()
+            display: block
+
+    &__left
+        width: 60%
+        align-items: center
+        +mobile()
+            width: 100%
+
+        & > *
+            width: 25%
+            +mobile()
+                width: 100%
+
+        ul
+            width: 75%
+            +mobile()
+                width: 100%
+                padding: 20px 0
+
+    &__right
+        width: 40%
+        +mobile()
+            width: 100%
+
+        & > *
+            width: calc(100% / 3)
+            +mobile()
+                width: 100%
+
+.social
+    &__link
+        border: solid 2px yellow
+        width: 100%
+        text-align: right
+        +mobile()
+            text-align: center
+            padding: 20px 0
+
+    &__item
+        margin-right: 24px
+
+        &:last-child
+            margin-right: 0
+
+        span
+            &:before
+                font-size: 24px
+                font-size: 2.4rem
+
+
+.contact__link
+    a
+        display: flex
+        align-items: center
+
+
+.mobile__menu
+    width: 100%
+    position: fixed
+    bottom: 0
+    right: 0
+    display: none
+    z-index: 999
+    +mobile()
+        display: flex
+
+    li
+        width: 100%
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+
+        a
+            display: block
+            width: 100%
+            text-align: center
+            color: white
+            font-size: 1.4rem
+            font-weight: 700
+            padding: 15px 0
+
+    &--green
+        background-color: $green
+
+    &--blue
+        background-color: $blue
+
+    &--yellow
+        background-color: $yellow
+
+

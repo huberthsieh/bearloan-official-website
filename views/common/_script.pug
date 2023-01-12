@@ -1,0 +1,29 @@
+mixin script(options)
+    each item in options.length ? options : ['請引入script']
+        script(type=item.type src=item.src)
+
+//- Throw your props into footer-script component
++script([
+    {
+        type: 'text/javascript',
+        src: './assets/js/jquery.min.js'
+    },
+    {
+        type: 'text/javascript',
+        src: './assets/js/jquery.waypoints.js'
+    },
+    {
+        type: 'text/javascript',
+        src: './assets/js/swiper-bundle.min.js'
+    },
+    {
+        type: 'text/javascript',
+        src: './assets/js/jquery.counterup.js'
+    },
+    {
+        type: 'text/javascript',
+        src: './assets/js/main.js'
+    }
+])
+
+

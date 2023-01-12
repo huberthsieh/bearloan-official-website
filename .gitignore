@@ -1,0 +1,7 @@
+# dependencies
+/node_modules/
+/public
+
+# misc
+.DS_Store
+.idea

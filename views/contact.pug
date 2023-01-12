@@ -1,0 +1,28 @@
+include contact/_banner
+include contact/_contact
+include contact/_notice
+
+doctype html
+html(lang="zh-Hant")
+
+    // Include Common Head
+    include common/_head
+
+    // Main
+    body(data-page="contact")
+        include ./common/_header
+
+        main
+            #content.content
+                +banner()
+
+                +contact()
+
+                +notice()
+
+
+
+
+        include common/_footer
+
+        include common/_script

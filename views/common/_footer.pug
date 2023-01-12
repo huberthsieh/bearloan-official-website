@@ -1,0 +1,100 @@
+footer#footer.footer
+    ul.mobile__menu
+        li.mobile__menu--green
+            a(href="") 線上諮詢
+        li.mobile__menu--blue
+            a(href="") 免付費專線
+        li.mobile__menu--yellow
+            a(href="") 聯絡我們
+
+    .footer__inner
+        .footer__top
+            mixin item(tw, en, href, animation, delay, frequency)
+                - href = href || "javascript:void(0);"
+                - animation = animation || "modal-fade-in"
+                - delay = delay || "0"
+                - frequency = frequency || "once"
+
+                li.link__item.color-white
+                    a(href=href).d-block
+                        span.tw.d-block
+                            | #{ tw }
+                        span.en.d-block
+                            | #{ en }
+
+            .footer__left
+                .logo__wrap
+                    a.img(href="/")
+
+                ul.link__list.contact__link
+                    li
+                        a(href="" target="_blank")
+                            i.fa-solid.fa-phone.color-white
+                            p.color-white 免費專線
+                            p.color-white.line |
+                            p.color-white.text 0800-818-188
+
+                    li
+                        a(href="" target="_blank")
+                            i.fa-brands.fa-line.color-white
+                            p.color-white LINE客服
+                            p.color-white.line |
+                            p.color-white.text @bearloan
+
+                    li
+                        a(href="" target="_blank")
+                            i.fa-solid.fa-location-dot.color-white
+                            p.color-white 公司地址
+                            p.color-white.line |
+                            p.color-white.text 台中市西區忠明南路270號12樓之1
+
+                    li
+                        a(href="" target="_blank")
+                            i.fa-regular.fa-envelope.color-white
+                            p.color-white 電子信箱
+                            p.color-white.line |
+                            p.color-white.text bearloantw@gmail.com
+
+
+            .footer__right
+                ul.link__list
+                    li
+                        a(href="about.html").color-white 關於我們
+                    li
+                        a(href="article.html").color-white 文章專欄
+                    li
+                        a(href="https://www.104.com.tw/company/1a2x6blm13" target="_blank").color-white 招募訊息
+                    li
+                        a(href="contact.html").color-white 聯絡我們
+
+
+                ul.link__list
+                    li
+                        a(href="moto.html").color-white 專屬機車貸款
+                    li
+                        a(href="car.html").color-white 專屬汽車貸款
+                    li
+                        a(href="house.html").color-white 專屬房屋二胎
+
+
+                .social__link
+                    a.social__item(href="https://line.me/R/ti/p/@903uqtzp?oat__id=1344623" target="_blank" rel="noreferrer noopener")
+                        img(src="../assets/images/icon/line.png")
+
+                    a.social__item(href="https://instagram.com/bearloantw?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer noopener")
+                        img(src="../assets/images/icon/fb.png")
+
+                    a.social__item(href="https://www.facebook.com/104547679016828" target="_blank" rel="noreferrer noopener")
+                        img(src="../assets/images/icon/youtube.png")
+
+
+        .footer__bottom
+            p
+                | 和鑫企劃有限公司，主要經營之業務為協助三家上市融資公司(中租5871、和潤6592、裕融9941)之租賃、品牌推廣服務，其中所提到三家上市上櫃企業之旗下融資公司與台灣政府認證之國家銀行有密切合作之企業關係，並且其登記之營業項目服務為協助顧客利息攤還和分期付款。
+
+            //| &copy;
+            //| 2022 All Rights Reserved. Design by
+            a(href='index.html') © 2022 熊蓋厚貸 | 和鑫企劃有限公司
+            a(href='javascript:void(0);').privacy__btn | 隱私權政策
+
+
