@@ -1,0 +1,93 @@
+.accordion
+    &__title
+        font-size: 18px
+        font-size: 1.8rem
+        font-weight: 700
+        color: white
+        transition: color .3s linear
+        padding: 0 20px
+
+        +mobile()
+            font-size: 16px
+            font-size: 1.6rem
+            +mobile()
+                padding-right: 30px
+                display: block
+
+    &__item
+        margin-bottom: 20px
+        color: white
+
+        &[data-color=black]
+            color: $black
+
+            button[aria-expanded='true']
+                border-color: $black
+
+    &__content
+        opacity: 0
+        max-height: 0
+        overflow: hidden
+        transition: opacity .3s linear, max-height .3s linear, padding .3s linear
+        line-height: 1.5
+        border-bottom: 1px solid $gray
+        padding: 0 20px
+
+        p
+            font-size: 18px
+            font-size: 1.8rem
+            +mobile()
+                font-size: 16px
+                font-size: 1.6rem
+
+    button
+        position: relative
+        display: block
+        width: 100%
+        padding: 1rem 0
+        border-bottom: 1px solid $gray
+        transition: color .3s linear, background-color .3s linear
+
+        &[aria-expanded='true']
+            border-color: white
+            background-color: white
+
+            .accordion__title
+                color: black
+
+            + .accordion__content
+                opacity: 1
+                max-height: 20rem
+                padding: 1rem 20px
+
+            .icon
+                &::after
+                    width: 0
+
+    .icon
+        display: inline-block
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        +size(22px, 22px)
+        border: 1px solid white
+        border-radius: 22px
+
+        &:before, &:after
+            display: block
+            position: absolute
+            content: ''
+            background: white
+
+        &::before
+            top: 9px
+            left: 5px
+            width: 10px
+            height: 2px
+
+        &::after
+            top: 5px
+            left: 9px
+            width: 2px
+            height: 10px

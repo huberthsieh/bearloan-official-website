@@ -1,0 +1,9 @@
+mixin accordionItem(title, content)
+    .accordion__item
+        button(aria-expanded='false' type="button")
+            span.accordion__title(data-color=color) #{ title }
+            span.icon(aria-hidden='true' data-color=color)
+
+        .accordion__content
+            p
+                | !{ content }

@@ -1,23 +1,46 @@
-//doctype html
-//html(lang="zh-Hant")
-//
-//    // Include Common Head
-//    include common/_head
-//
-//    // Main
-//    body
-//        include ./common/_header
-//
-//        main
-//            #content.content
-//                // Moto Main
-//                include ./house/_houseContainer
-//
-//                // Entry Link
-//                include ./common/_entry
-//
-//        #cover__menu.cover__menu
-//
-//        include common/_footer
-//
-//        include common/_script
+include house/_banner
+include house/_step
+include house/_contact
+include house/_info
+include house/_intro
+include house/_customer
+include house/_faq
+include house/_video
+include house/_compareImage
+
+
+doctype html
+html(lang="zh-Hant")
+
+    // Include Common Head
+    include common/_head
+
+    // Main
+    body(data-page="house")
+        include ./common/_header
+
+        main
+            #content.content
+                +banner()
+
+                +step()
+
+                +info()
+
+                +intro()
+
+                +contact()
+
+                +compare()
+
+                +video()
+
+                +faq()
+
+                +customer()
+
+                +contact()
+
+        include common/_footer
+
+        include common/_script

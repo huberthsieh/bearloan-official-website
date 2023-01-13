@@ -1,17 +1,12 @@
-include common/_googleMap
-include index/_banner
-include index/_about
-include index/_data
-include index/_advantage
-include index/_team
-include index/_customer
-include index/_notice
-include index/_contact
+include moto/_banner
+include moto/_step
+include moto/_contact
+include moto/_info
+include moto/_intro
+include moto/_customer
+include moto/_faq
+include moto/_video
 
-//include components/section/_introduction
-//include components/section/_team
-//include components/section/_background
-//include components/section/_Banner
 
 doctype html
 html(lang="zh-Hant")
@@ -27,21 +22,21 @@ html(lang="zh-Hant")
             #content.content
                 +banner()
 
-                +about()
+                +step()
 
-                +data()
+                +info()
 
-                +advantage()
-
-                +team()
-
-                +customer()
-
-                +notice()
+                +intro()
 
                 +contact()
 
-            +map()
+                +video()
+
+                +faq()
+
+                +customer()
+
+                +contact()
 
         include common/_footer
 
