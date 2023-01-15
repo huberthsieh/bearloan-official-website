@@ -1,6 +1,5 @@
 .banner
     &__home
-        border: solid 3px orange
         padding-top: 70px
 
         .container
@@ -175,5 +174,12 @@
 
         .img__wrap
             line-height: 1
+            +size(50%, auto)
+            +mobile()
+                width: 100%
+                order: 1
+
+            img
+                +size(100%, 100%)
 
 

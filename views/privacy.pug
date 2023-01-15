@@ -1,0 +1,24 @@
+include privacy/_banner
+include privacy/_privacy
+
+doctype html
+html(lang="zh-Hant")
+
+    // Include Common Head
+    include common/_head
+
+    // Main
+    body(data-page="contact")
+        include ./common/_header
+
+        main
+            #content.content
+                +banner()
+
+                +privacy()
+
+
+
+        include common/_footer
+
+        include common/_script

@@ -106,7 +106,6 @@
         +size(30px, 100%)
         padding-right: 20px
         +flex(center, center)
-        border: solid 1px yellow
         display: none
         +pad
             display: flex
@@ -161,9 +160,9 @@
     opacity: 0
     z-index: 11
     pointer-events: none
-    transition: opacity .4s
-    +mobile
-        padding-top: 80px
+    transition: opacity .35s
+    +mobile()
+        padding-top: 70px
 
     &.open
         opacity: 1
@@ -174,12 +173,13 @@
         max-width: 1080px
         margin: 0 auto
         height: 100%
-        padding: 0 20px
+        padding: 30px 20px 0
         position: relative
         pointer-events: none
         z-index: 11
         opacity: 0
-        transition: opacity .4s
+        transition: opacity .35s
+        background-color: $main
 
         &.open
             animation: modal-fade-in .5s ease-in-out .6s 1 normal both running
