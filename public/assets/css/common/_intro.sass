@@ -1,0 +1,161 @@
+.intro
+    .container
+        position: relative
+        z-index: 1
+        overflow: hidden
+        padding: 0 0 50px 0
+        +mobile()
+            padding: 30px
+
+        .title__wrap
+            padding-top: 50px
+            &.pt-0
+                padding-top: 0
+
+            +mobile()
+                padding-top: 30px
+
+    &__content
+        margin-bottom: 30px
+        color: black
+        p
+            font-size: 1.8rem
+            text-align: center
+            +mobile()
+                font-size: 1.6rem
+                padding: 0 30px
+
+    &__list
+        display: flex
+        justify-content: space-between
+        +mobile()
+            display: block
+
+        &--circle
+            align-items: center
+
+
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        width: calc(100% / 4 - 15px)
+        background-color: #D9D9D9
+        padding: 20px
+        
+        +mobile()
+            width: 100%
+            margin-bottom: 30px
+
+        &__title
+            font-size: 2.4rem
+            color: $main
+            font-weight: 700
+
+        &__text
+            padding-top: 10px
+            p
+                font-size: 1.8rem
+                padding-top: 5px
+                +mobile()
+                    font-size: 1.6rem
+
+            p.watchout
+                color: #BE0F1A
+
+        .img__wrap
+            line-height: 1
+            width: 100%
+            img
+                width: 100%
+
+.circle__list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    +mobile()
+        flex-direction: column
+        justify-content: unset
+
+    .circle__item
+        position: relative
+        overflow: hidden
+        +size(250px, 250px)
+        border-radius: 50%
+        +mobile()
+            margin-bottom: 20px
+
+        &:before
+            content: ""
+            +size(101%, 101%)
+            position: absolute
+            left: 0
+            top: 0
+            background-color: $main
+            z-index: 1
+            opacity: 0.8
+            transition: opacity .3s
+
+        &:hover
+            &:before
+                opacity: .6
+
+            .img__wrap
+                transform: scale(1.1)
+
+        &__text
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            color: white
+            font-size: 3rem
+            font-weight: 700
+            z-index: 2
+            width: 100%
+            text-align: center
+            +mobile()
+                font-size: 2.4rem
+
+            mark
+                color: #FFD914
+                font-size: 3rem
+                font-weight: 700
+                padding-right: 5px
+                +mobile()
+                    font-size: 2.4rem
+
+        .img__wrap
+            transition: .5s transform
+            z-index: -1
+
+        &__icon
+            line-height: 1
+            margin-top: -20px
+
+            +mobile()
+                margin-bottom: 20px
+                margin-top: 0
+
+            i
+                font-size: 10rem
+
+                &.fa-arrow-right
+                    +mobile()
+                        transform: rotate(90deg)
+
+
+.intro
+    .info
+        background: unset
+
+        &:before
+            content: none
+
+        .title__wrap
+            color: $main
+
+        .info__content
+            color: black

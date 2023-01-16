@@ -1,0 +1,68 @@
+// Global Style
+.container
+    max-width: 1140px
+    width: 100%
+    margin: 0 auto
+    overflow: hidden
+
+.title__wrap
+    width: 100%
+    color: $main
+    text-align: center
+    padding: 24px 0
+
+    &.white
+        color: white
+
+    .title, .subtitle
+        line-height: 1.5
+        font-weight: 700
+
+    .title
+        font-size: 3.6rem
+        +mobile()
+            font-size: 2.2rem
+
+    .subtitle
+        font-size: 2rem
+        font-weight: 700
+        +mobile()
+            font-size: 1.8rem
+
+.link__wrap
+    padding: 50px 0
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    +mobile()
+        padding: 0 0 30px 0
+
+    .link__more
+        font-size: 1.8rem
+        color: $main
+        background-color: #fff
+        width: 100%
+        max-width: 200px
+        height: 45px
+        display: flex
+        align-items: center
+        padding: 0 20px
+        position: relative
+
+        i
+            position: absolute
+            right: 20px
+            top: 50%
+            transform: translateY(-50%)
+            font-size: 1.8rem
+
+    &.link--main
+        .link__more
+            background-color: $main
+            color: white
+
+    &.link--yellow
+        .link__more
+            background-color: $yellow
+            color: white
