@@ -1,0 +1,190 @@
+.article
+    .container
+        position: relative
+        z-index: 1
+        overflow: hidden
+        padding: 50px 0
+        +mobile()
+            padding: 30px
+
+    &__tabs
+        max-width: 450px
+        width: 100%
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        +mobile()
+            flex-wrap: wrap
+
+        &__item
+            background-color: #E5E5E5
+            width: 100%
+            margin-right: 5px
+            padding: 5px 10px
+            text-align: center
+            font-size: 1.8rem
+            font-weight: 500
+            cursor: pointer
+            +mobile()
+                margin-right: 5px
+                margin-bottom: 5px
+                width: calc(50% - 2.5px)
+                font-size: 1.6rem
+
+            &:last-child
+                margin-right: 0
+                +mobile()
+                    margin-bottom: 0
+
+            &:nth-child(2)
+                +mobile()
+                    margin-right: 0
+
+            &:nth-child(3)
+                +mobile()
+                    margin-bottom: 0
+
+            &.active
+                background-color: $blue
+                color: white
+
+    &__content
+        padding: 50px 0
+        +mobile()
+            padding: 30px 0
+
+    &__list
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+
+        li
+            width: 50%
+            padding: 20px
+            +mobile()
+                width: 100%
+                padding: 0 0 20px
+
+    &__date
+        color: $green2
+        font-size: 1.6rem
+        font-weight: 500
+
+    &__title
+        font-size: 2.4rem
+        font-weight: 500
+        margin-bottom: 10px
+        +mobile()
+            font-size: 2.2rem
+
+    &__description
+        font-size: 1.8rem
+        +mobile()
+            font-size: 1.6rem
+
+    &__pages
+        display: flex
+        max-width: 240px
+        width: 100%
+        padding: 0 20px
+        margin: 50px auto
+        position: relative
+        +mobile()
+            margin: 20px auto
+
+        &__item
+            width: 100%
+            text-align: center
+            position: relative
+
+            span
+                color: black
+                font-size: 1.6rem
+                padding: 5px
+                position: relative
+                cursor: pointer
+
+            &.active
+                span
+                    color: $green2
+                    border-bottom: solid 1px $green2
+
+            .article__arrow
+                border: solid 1px $green2
+                +size(5px, 5px)
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%) rotate(-45deg)
+                border-left: none
+                border-top: none
+
+
+.article__detail
+    .container
+        padding: 50px 0
+        +mobile()
+            padding: 30px
+
+    &__date
+        color: $green2
+        font-size: 1.6rem
+        font-weight: 500
+
+    &__title
+        font-size: 2rem
+        font-weight: 500
+        margin: 20px 0
+
+    &__content
+        padding-bottom: 30px
+        +mobile()
+            padding-bottom: 20px
+
+        & > *
+            margin-bottom: 20px
+            font-size: 1.6rem
+
+        ul, ol
+            list-style-type: inherit
+            padding-left: 20px
+
+        h2
+            font-size: 2.4rem
+            font-weight: 500
+            +mobile()
+                font-size: 2.2rem
+
+        h3
+            font-size: 2.2rem
+            font-weight: 500
+            +mobile()
+                font-size: 2rem
+
+        h4
+            font-size: 2rem
+            font-weight: 500
+            +mobile()
+                font-size: 1.8rem
+
+    .article__suggest
+        border-top: solid 2px rgba(black, .1)
+
+        &__title
+            font-size: 2.2rem
+            font-weight: 700
+            text-align: center
+            padding-top: 50px
+            padding-bottom: 30px
+            +mobile()
+                padding: 30px 0
+                font-size: 2rem
+
+        .article__list
+            li
+                width: calc(100% / 3)
+                +mobile()
+                    width: 100%
+
+
+

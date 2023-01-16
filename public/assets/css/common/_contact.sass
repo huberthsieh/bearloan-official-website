@@ -1,0 +1,117 @@
+.contact
+    padding: 50px 0
+    +mobile()
+        padding-bottom: 0
+        padding-top: 0
+
+    .title__wrap
+        .subtitle
+            text-align: left
+            padding-left: 20px
+            +mobile()
+                padding-left: 0
+
+        .title
+            text-align: left
+
+    .container
+        display: flex
+
+        +mobile()
+            display: block
+
+    &__content
+        max-width: 400px
+        padding: 0 30px
+        p
+            font-size: 1.8rem
+
+            +mobile()
+                font-size: 1.6rem
+                padding-bottom: 30px
+
+        .iframe__wrap
+            border: solid 2px green
+            margin: 24px 0
+            position: relative
+            padding-bottom: 56.25%
+
+            iframe
+                position: absolute
+                height: 100%
+                left: 0
+                top: 0
+
+    &__dec
+        border: solid 2px red
+        +size(120px, 120px)
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 2.4rem
+        color: white
+        background: linear-gradient(to bottom, #04215A, #035DAC)
+        margin-right: 10px
+
+        +mobile()
+            font-size: 2rem
+            +size(92px, 92px)
+            min-width: 92px
+
+    &__text
+        border: solid 2px orange
+        width: 100%
+        +mobile()
+            padding: 0 10px
+
+        p
+            font-size: 2rem
+            color: $main
+            font-weight: 700
+
+        span
+            display: block
+            font-size: 1.6rem
+            +mobile()
+                font-size: 1.4rem
+
+    &__list
+        display: flex
+        flex-wrap: wrap
+
+        li
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 20px
+            border: solid 2px blue
+            background-color: $gray
+            padding: 20px
+            width: 100%
+
+        p
+            font-size: 2.4rem
+            +mobile()
+                font-size: 1.6rem
+
+    .link__wrap
+        padding: 0
+        .link__more
+            max-width: 120px
+            border-radius: 8px
+
+
+body[data-page="contact"]
+    .container
+        display: block
+
+    .contact
+        &__content
+            max-width: 700px
+            margin: 0 auto 30px
+            p
+                text-align: center
+
+            +mobile()
+                margin-top: 30px
+                margin-bottom: 0

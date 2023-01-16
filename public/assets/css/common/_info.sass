@@ -1,0 +1,72 @@
+.info
+    background: url("../images/index/banner-data.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center bottom
+    position: relative
+
+    &:before
+        content: ""
+        +size(100%, 100%)
+        position: absolute
+        left: 0
+        top: 0
+        background: linear-gradient(to bottom, #04215A, #035DAC)
+        z-index: 0
+        opacity: 0.95
+
+    .container
+        position: relative
+        z-index: 1
+        overflow: hidden
+        padding: 0 0 50px 0
+        +mobile()
+            padding: 30px
+
+        .title__wrap
+            padding-top: 50px
+            color: white
+            +mobile()
+                padding-top: 30px
+
+    &__content
+        margin-bottom: 25px
+        color: white
+        p
+            font-size: 1.8rem
+            text-align: center
+            +mobile()
+                font-size: 1.6rem
+                padding: 0 30px
+
+    &__text
+        padding: 10px 20px
+        color: white
+        background-color: $main
+        font-size: 2rem
+        font-weight: 500
+        width: 100%
+        text-align: center
+
+    &__list
+        display: flex
+        justify-content: space-between
+        margin-bottom: 20px
+        +mobile()
+            display: block
+
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        width: calc(100% / 4 - 15px)
+        +mobile()
+            width: 100%
+            margin-bottom: 30px
+
+        .img__wrap
+            line-height: 1
+            width: 100%
+            img
+                width: 100%

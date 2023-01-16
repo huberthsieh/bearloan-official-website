@@ -1,0 +1,79 @@
+.compare__wrapper
+    max-width: 1140px
+    margin: 0 auto
+    padding: 50px 0
+
+.compare__table
+    width: 100%
+    max-width: calc(var(--table-column-width) * var(--table-columns-visible))
+    margin: 0 auto
+    overflow-y: scroll
+
+    --table-gap: 2.5rem 2rem
+    --table-columns: 5
+    --table-columns-visible: 4
+    --table-column-width: 320px
+
+
+.compare__cell
+    display: flex
+    flex-direction: column
+    padding: var(--table-gap)
+    border-bottom: 1px solid $gray
+
+    &--sticky
+        position: sticky
+        left: 0
+
+    &--header
+        background-color: $gray
+        color: $main
+
+    &--spacer
+        background-color: white
+
+    &--brand
+        h2 
+            color: var(--color-dark-secondary)
+            margin: 0
+
+    &.compare--bear
+        color: $main-light
+
+.compare__header
+    background-color: white
+    position: sticky
+    top: 0
+
+.compare__grid
+    display: grid
+    grid-template-columns: repeat(var(--table-columns), minmax(var(--table-column-width), 1fr))
+
+.compare__text
+    font-size: 16px
+    font-size: 1.6rem
+    color: $black
+
+    &.compare--caption
+        font-size: 1.8rem
+        font-weight: 500
+        color: $main
+
+
++pad
+    .compare__header, .compare__footer
+        display: none
+
+    .compare__table
+        --table-columns: 2
+        --table-column-width: auto
+
+    .compare__cell
+        &--full
+            grid-column: 1 / -1
+
+        &::before
+            content: attr(aria-label)
+            font-weight: normal
+            line-height: 2.5rem
+            color: var(--color-light-secondary)

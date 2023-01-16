@@ -1,0 +1,62 @@
+.data
+    background: url("../images/index/banner-data.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center bottom
+    position: relative
+
+    &:before
+        content: ""
+        +size(100%, 100%)
+        position: absolute
+        left: 0
+        top: 0
+        background: linear-gradient(to bottom, #04215A, #035DAC)
+        z-index: 0
+        opacity: 0.95
+
+    &__list
+        display: flex
+        flex-wrap: wrap
+        color: white
+
+        li
+            width: 25%
+            text-align: center
+            padding: 20px 0
+            +mobile()
+                width: 50%
+
+        p
+            font-size: 2.4rem
+            +mobile()
+                font-size: 1.6rem
+
+        .number__wrap
+            span
+                font-size: 4.8rem
+                font-weight: 500
+                +mobile()
+                    font-size: 3.2rem
+
+    .container
+        position: relative
+        z-index: 1
+        overflow: hidden
+        padding-bottom: 200px
+        +mobile()
+            padding-bottom: 120px
+
+.img__bear
+    +size(200px, 200px)
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translateX(-50%)
+    +mobile()
+        +size(120px, 120px)
+
+    img
+        width: 100%
+
+

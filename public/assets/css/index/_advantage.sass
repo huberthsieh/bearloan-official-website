@@ -1,0 +1,71 @@
+.advantage
+    &__content
+        p
+            font-size: 1.8rem
+            +mobile()
+                font-size: 1.6rem
+                padding: 0 30px
+
+        .iframe__wrap
+            margin: 24px 0
+            position: relative
+            padding-bottom: 56.25%
+
+            iframe
+                position: absolute
+                height: 100%
+                left: 0
+                top: 0
+
+    &__dec
+        +size(120px, 120px)
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 2.4rem
+        color: white
+        background: linear-gradient(to bottom, #04215A, #035DAC)
+        margin-right: 10px
+
+        +mobile()
+            font-size: 2rem
+            +size(92px, 92px)
+            min-width: 92px
+
+
+    &__text
+        width: 100%
+        +mobile()
+            padding: 0 10px
+
+        p
+            font-size: 2rem
+            color: $main
+            font-weight: 700
+
+        span
+            display: block
+            font-size: 1.6rem
+            +mobile()
+                font-size: 1.4rem
+
+    &__list
+        display: flex
+        flex-wrap: wrap
+
+        li
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 20px
+            background-color: $gray
+            padding: 20px
+            width: 100%
+
+        p
+            font-size: 2.4rem
+            +mobile()
+                font-size: 1.6rem
+
+
+
