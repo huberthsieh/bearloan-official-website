@@ -217,6 +217,11 @@ table {
   color: white;
 }
 
+.img__wrap img {
+  width: 100%;
+  height: 100%;
+}
+
 html * {
   font-family: "Inter", "Noto Sans TC", sans-serif;
   font-size: 1.4rem;
@@ -787,10 +792,12 @@ html *::selection {
   z-index: 11;
   pointer-events: none;
   transition: opacity 0.35s;
+  display: none;
 }
 @media (max-width: 767px) {
   .modal {
     padding-top: 70px;
+    display: block;
   }
 }
 .modal.open {
@@ -1881,6 +1888,7 @@ body[data-page=contact] .notice__text {
 }
 .img__arrow img {
   width: 100%;
+  animation: move-down-1 0.7s forwards infinite;
 }
 @media (max-width: 767px) {
   .img__arrow {
@@ -2291,7 +2299,7 @@ body[data-page=contact] .notice__text {
 }
 .intro__item {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   width: calc(25% - 15px);
@@ -13035,6 +13043,9 @@ readers do not read off random characters that represent icons */
     content: none;
   }
 }
+.about .container {
+  max-width: 100%;
+}
 .about p {
   font-size: 3.6rem;
   color: white;
@@ -13358,7 +13369,7 @@ readers do not read off random characters that represent icons */
 }
 .history .container {
   height: 100%;
-  padding-bottom: 200px;
+  padding-bottom: 250px;
 }
 @media (max-width: 767px) {
   .history .container {
@@ -13777,7 +13788,7 @@ readers do not read off random characters that represent icons */
   }
 }
 .article__tabs {
-  max-width: 450px;
+  max-width: 480px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -14055,20 +14066,21 @@ readers do not read off random characters that represent icons */
 }
 @media (max-width: 767px) {
   .member__image {
-    max-width: 280px;
     margin: 0 auto;
   }
 }
 .member__image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 @media (max-width: 767px) {
   .member__image img {
     position: relative;
+    transform: unset;
   }
 }
 .member__experience {
@@ -14117,4 +14129,88 @@ readers do not read off random characters that represent icons */
   .member__experience__item p span {
     font-size: 1.6rem;
   }
+}
+
+.dealer {
+  background: url("../images/index/banner-data.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+}
+.dealer:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to bottom, #04215A, #035DAC);
+  z-index: 0;
+  opacity: 0.95;
+}
+.dealer .container {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 0 50px 50px;
+}
+@media (max-width: 767px) {
+  .dealer .container {
+    padding: 30px 0;
+  }
+}
+.dealer .container .title__wrap {
+  color: white;
+}
+.dealer__content {
+  margin-bottom: 25px;
+  color: white;
+}
+.dealer__content p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .dealer__content p {
+    font-size: 1.6rem;
+    padding: 0 30px;
+  }
+}
+.dealer__text {
+  padding: 10px 40px;
+  color: white;
+  background-color: #04215A;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+.dealer__list {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .dealer__list {
+    display: block;
+    padding: 0 30px;
+  }
+}
+.dealer__item {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(25% - 15px);
+}
+@media (max-width: 767px) {
+  .dealer__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.dealer__item .img__wrap img {
+  width: 100%;
+  height: 100%;
 }
