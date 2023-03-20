@@ -8,10 +8,6 @@
             position: relative
             max-width: 100%
 
-            +mobile()
-                flex-direction: column
-                padding-bottom: 70px
-
             .text__wrap
                 display: flex
                 justify-content: center
@@ -32,6 +28,10 @@
         .text__wrap
             +mobile()
                 padding-top: 20px
+
+
+        .swiper-banner
+            width: 100%
 
 .img__arrow
     +size(69px, 69px)
@@ -125,7 +125,7 @@
             background-position: center top
             +mobile()
                 flex-direction: column
-                padding-bottom: 30px
+                //padding-bottom: 30px
 
             &:before
                 content: ""
@@ -137,9 +137,10 @@
                 z-index: 0
                 opacity: 0.95
                 +mobile()
-                    +size(100%, calc(50% + 15px))
+                    +size(100%, 50%)
                     top: auto
                     bottom: 0
+                    opacity: 0
 
         .text__wrap
             display: flex
@@ -155,6 +156,18 @@
                 order: 2
                 padding-right: 0
                 padding-top: 30px
+                padding-bottom: 30px
+
+            &:before
+                +mobile()
+                    content: ""
+                    position: absolute
+                    +size(100%, 100%)
+                    left: 0
+                    bottom: 0
+                    background: linear-gradient(to bottom, #04215A, #035DAC)
+                    z-index: -1
+                    opacity: 0.95
 
         .text__inner
             max-width: 500px

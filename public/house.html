@@ -34,7 +34,7 @@
           <div class="pc__menu">
             <ul class="pc__menu__inner">
                             <li class="pc__menu__item"><a href="about.html"><span class="txt">關於我們</span></a></li>
-                            <li class="pc__menu__item"><a href="team.html"><span class="txt">專業團隊</span></a></li>
+              <!--+item('team.html', '專業團隊')-->
                             <li class="pc__menu__item"><a href="moto.html"><span class="txt">機車貸款</span></a></li>
                             <li class="pc__menu__item"><a href="car.html"><span class="txt">汽車貸款</span></a></li>
                             <li class="pc__menu__item"><a href="house.html"><span class="txt">房屋二胎</span></a></li>
@@ -85,7 +85,10 @@
                 <div class="text">申請銀行房屋二胎卻遭婉拒嗎?銀行審核嚴格，在銀行法的限制下，只要借款人條件信用狀況評分未達標準就會被婉拒！但找到對的單位幫您處理房二胎貸款，能讓您順利核貸，選擇熊蓋厚貸絕對沒問題，而且免費諮詢、免費估價。</div>
               </div>
             </div>
-            <div class="img__wrap"><img src="../assets/images/house/banner.png"/></div>
+            <div class="img__wrap"><video autoplay loop id="video-background" muted plays-inline>
+<source src="../assets/images/house.mp4" type="video/mp4">
+</video>
+            </div>
           </div>
         </section>
         <section class="step">
@@ -99,28 +102,40 @@
               <div class="step__timeline__point"></div>
               <div class="step__timeline__point"></div>
             </div>
-            <ul class="step__list">
-              <li class="step__item">
-                <div class="step__item__title">1 . 線上免費諮詢</div>
-                <div class="img__wrap"><img src="../assets/images/house/step-01.png"/></div>
-                <div class="step__item__text">線上填單留下您的聯絡方式或是撥打服務專線 0800-818188，也可以加入LINE 一對一客服，服務專員將與您聯繫核對資料。</div>
-              </li>
-              <li class="step__item">
-                <div class="step__item__title">2 . 送審1天可知結果</div>
-                <div class="img__wrap"><img src="../assets/images/house/step-02.png"/></div>
-                <div class="step__item__text">房貸經理將協助您房屋鑑價及資料送審，並盡力幫您爭取滿足您需求的額度，一日內即可知道鑑價結果。</div>
-              </li>
-              <li class="step__item">
-                <div class="step__item__title">3 . 對保簽約及不動產設定</div>
-                <div class="img__wrap"><img src="../assets/images/house/step-03.png"/></div>
-                <div class="step__item__text">會依據申請人提供的資料進行照會，並審核是否具備還款條件及申貸標準，核准後會約定好時間地點，當面確認簽約，保障彼此權益，並至地政事務所進行抵押權設定。</div>
-              </li>
-              <li class="step__item">
-                <div class="step__item__title">4 . 銀行24小時撥款入帳</div>
-                <div class="img__wrap"><img src="../assets/images/house/step-04.png"/></div>
-                <div class="step__item__text">以上作業流程結束，就會從銀行撥款至申請人指定的帳戶，最快24小時撥付貸款，快速解決您的資金需求！</div>
-              </li>
-            </ul>
+            <div class="swiper-step swiper-container">
+              <div class="swiper-wrapper step__list">
+                <div class="swiper-slide step__item">
+                  <div class="slide-inner">
+                    <div class="step__item__title">1 . 線上免費諮詢</div>
+                    <div class="img__wrap"><img src="../assets/images/house/step-01.jpg"/></div>
+                    <div class="step__item__text">線上填單留下您的聯絡方式或是撥打服務專線 0800-818188，也可以加入LINE 一對一客服，服務專員將與您聯繫核對資料。</div>
+                  </div>
+                </div>
+                <div class="swiper-slide step__item">
+                  <div class="slide-inner">
+                    <div class="step__item__title">2 . 送審1天可知結果</div>
+                    <div class="img__wrap"><img src="../assets/images/house/step-02.jpg"/></div>
+                    <div class="step__item__text">房貸經理將協助您房屋鑑價及資料送審，並盡力幫您爭取滿足您需求的額度，一日內即可知道鑑價結果。</div>
+                  </div>
+                </div>
+                <div class="swiper-slide step__item">
+                  <div class="slide-inner">
+                    <div class="step__item__title">3 . 對保簽約及不動產設定</div>
+                    <div class="img__wrap"><img src="../assets/images/house/step-03.jpg"/></div>
+                    <div class="step__item__text">會依據申請人提供的資料進行照會，並審核是否具備還款條件及申貸標準，核准後會約定好時間地點，當面確認簽約，保障彼此權益，並至地政事務所進行抵押權設定。</div>
+                  </div>
+                </div>
+                <div class="swiper-slide step__item">
+                  <div class="slide-inner">
+                    <div class="step__item__title">4 . 銀行24小時撥款入帳</div>
+                    <div class="img__wrap"><img src="../assets/images/house/step-04.jpg"/></div>
+                    <div class="step__item__text">以上作業流程結束，就會從銀行撥款至申請人指定的帳戶，最快24小時撥付貸款，快速解決您的資金需求！</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev swiper-step-prev"></div>
+              <div class="swiper-button-next swiper-step-next"></div>
+            </div>
           </div>
         </section>
         <section class="info">
@@ -131,48 +146,72 @@
             <div class="info__content">
               <p>不論是自營商、市場攤商、臨時工、領現族、soho族或是酒店公關，只要名下有房都能申請二胎房貸。</p>
             </div>
-            <ul class="info__list">
-              <li class="info__item">
-                <div class="img__wrap"><img src="../assets/images/moto/info-01.jpg"/></div>
-                <div class="info__text">市場攤販，也能貸</div>
-              </li>
-              <li class="info__item">
-                <div class="img__wrap"><img src="../assets/images/moto/info-02.jpg"/></div>
-                <div class="info__text">家庭保母，也能貸</div>
-              </li>
-              <li class="info__item">
-                <div class="img__wrap"><img src="../assets/images/moto/info-03.jpg"/></div>
-                <div class="info__text">工地人員，也能貸</div>
-              </li>
-              <li class="info__item">
-                <div class="img__wrap"><img src="../assets/images/moto/info-04.jpg"/></div>
-                <div class="info__text">外送(送貨)員，也能貸</div>
-              </li>
-            </ul>
+            <div class="swiper-info swiper-container">
+              <div class="swiper-wrapper info__list">
+                <div class="swiper-slide info__item">
+                  <div class="slide-inner">
+                    <div class="img__wrap"><img src="../assets/images/moto/info-01.jpg"/></div>
+                    <div class="info__text">市場攤販，也能貸</div>
+                  </div>
+                </div>
+                <div class="swiper-slide info__item">
+                  <div class="slide-inner">
+                    <div class="img__wrap"><img src="../assets/images/moto/info-02.jpg"/></div>
+                    <div class="info__text">家庭保母，也能貸</div>
+                  </div>
+                </div>
+                <div class="swiper-slide info__item">
+                  <div class="slide-inner">
+                    <div class="img__wrap"><img src="../assets/images/moto/info-03.jpg"/></div>
+                    <div class="info__text">工地人員，也能貸</div>
+                  </div>
+                </div>
+                <div class="swiper-slide info__item">
+                  <div class="slide-inner">
+                    <div class="img__wrap"><img src="../assets/images/moto/info-04.jpg"/></div>
+                    <div class="info__text">外送(送貨)員，也能貸</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="title__wrap">
               <div class="title">不論房型/屋齡</div>
             </div>
             <div class="info__content">
               <p>公寓，華廈，大樓，透天或是預售屋、新交屋需裝潢，老屋想重建也都能申貸唷!</p>
             </div>
-            <ul class="info__list">
-              <li class="info__item">
-                <div class="img__wrap"><img src="../assets/images/house/info-05.png"/></div>
-                <div class="info__text">公寓/華廈/大樓，也能貸</div>
-              </li>
-              <li class="info__item">
-                <div class="img__wrap"><img src="../assets/images/house/info-06.png"/></div>
-                <div class="info__text">透天厝，也能貸</div>
-              </li>
-              <li class="info__item">
-                <div class="img__wrap"><img src="../assets/images/house/info-07.png"/></div>
-                <div class="info__text">預售屋/新交屋，也能貸</div>
-              </li>
-              <li class="info__item">
-                <div class="img__wrap"><img src="../assets/images/house/info-08.png"/></div>
-                <div class="info__text">近期剛申貸，也能貸</div>
-              </li>
-            </ul>
+            <div class="swiper-info swiper-container">
+              <div class="swiper-wrapper info__list">
+                <div class="swiper-slide info__item">
+                  <div class="slide-inner">
+                    <div class="img__wrap"><img src="../assets/images/house/info-05.png"/></div>
+                    <div class="info__text">公寓/華廈/大樓，也能貸</div>
+                  </div>
+                </div>
+                <div class="swiper-slide info__item">
+                  <div class="slide-inner">
+                    <div class="img__wrap"><img src="../assets/images/house/info-06.png"/></div>
+                    <div class="info__text">透天厝，也能貸</div>
+                  </div>
+                </div>
+                <div class="swiper-slide info__item">
+                  <div class="slide-inner">
+                    <div class="img__wrap"><img src="../assets/images/house/info-07.png"/></div>
+                    <div class="info__text">預售屋/新交屋，也能貸</div>
+                  </div>
+                </div>
+                <div class="swiper-slide info__item">
+                  <div class="slide-inner">
+                    <div class="img__wrap"><img src="../assets/images/house/info-08.png"/></div>
+                    <div class="info__text">近期剛申貸，也能貸</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
         </section>
         <section class="intro">

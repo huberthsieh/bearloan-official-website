@@ -3,6 +3,10 @@ include about/_banner
 include about/_history
 include about/_philosophy
 include about/_activity
+include about/_notice
+include about/_promotion
+include about/_help
+include about/_office
 
 doctype html
 html(lang="zh-Hant")
@@ -11,16 +15,24 @@ html(lang="zh-Hant")
     include common/_head
 
     // Main
-    body
+    body(data-page="about")
         include ./common/_header
 
         main
             #content.content
                 +banner()
 
+                +promotion()
+
+                +notice()
+
+                +help()
+
                 +history()
 
-                +philosophy()
+                +office()
+
+                //+philosophy()
 
                 +activity()
 

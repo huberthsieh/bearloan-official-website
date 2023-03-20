@@ -153,3 +153,28 @@ body[data-page="contact"]
 
         &__text
             color: $main
+
+
+body[data-page="about"]
+    .notice__item
+        +mobile()
+            width: 100%
+
+    .notice__icon
+        flex-direction: column
+        background-color: #fff
+        color: $main
+        +size(252px, 252px)
+        +mobile()
+            +size(240px, 240px)
+
+        span
+            font-size: 20px
+            font-weight: 700
+            +mobile()
+                font-size: 18px
+
+            &.mt-10
+                margin-top: 10px
+                +mobile()
+                    margin-top: 5px

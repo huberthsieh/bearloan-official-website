@@ -7,7 +7,7 @@
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
     - The "symbol *" part is to solve Firefox SVG sprite bug
  */
-*:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+*:where(:not(html, iframe, canvas, img, svg, video, .article__detail__content *):not(svg *, symbol *)) {
     all: unset;
     display: revert;
 }
@@ -27,6 +27,23 @@ a, button {
 /* Remove list styles (bullets/numbers) */
 ol, ul, menu {
     list-style: none;
+}
+
+/* content edit */
+.article__detail__content ul, .article__detail__content ol {
+    list-style: auto;
+}
+
+.article__detail__content ul li, .article__detail__content ol li{
+    text-indent: 0 !important;
+}
+
+.article__detail__content ul, .article__detail__content ol {
+    list-style: auto;
+}
+
+.article__detail__content ul li, .article__detail__content ol li{
+    text-indent: 0 !important;
 }
 
 /* For images to not be able to exceed their container */
@@ -106,10 +123,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 body {
     line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
 }
 
 blockquote, q {

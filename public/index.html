@@ -38,7 +38,7 @@
           <div class="pc__menu">
             <ul class="pc__menu__inner">
                             <li class="pc__menu__item"><a href="about.html"><span class="txt">關於我們</span></a></li>
-                            <li class="pc__menu__item"><a href="team.html"><span class="txt">專業團隊</span></a></li>
+              <!--+item('team.html', '專業團隊')-->
                             <li class="pc__menu__item"><a href="moto.html"><span class="txt">機車貸款</span></a></li>
                             <li class="pc__menu__item"><a href="car.html"><span class="txt">汽車貸款</span></a></li>
                             <li class="pc__menu__item"><a href="house.html"><span class="txt">房屋二胎</span></a></li>
@@ -82,14 +82,35 @@
       <div class="content" id="content">
         <section class="banner__home">
           <div class="container">
-            <div class="text__wrap">
-              <div class="text__inner">
-                <div class="title">熊蓋厚貸</div>
-                <div class="subtitle">專業貸款唯一指定品牌</div>
+            <!--.text__wrap-->
+            <!--    .text__inner-->
+            <!--        .title 熊蓋厚貸-->
+            <!--        .subtitle 專業貸款唯一指定品牌-->
+            <!---->
+            <!--.img__wrap-->
+            <!--    img(src="../assets/images/index/banner.png")-->
+            <!---->
+            <!---->
+            <!--.img__arrow-->
+            <!--    img(src="../assets/images/index/arrow.png")-->
+            <div class="swiper-banner swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide-inner"><img src="../assets/images/index/banner01.jpg"/></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-inner"><img src="../assets/images/index/banner02.jpg"/></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-inner"><img src="../assets/images/index/banner03.jpg"/></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-inner"><img src="../assets/images/index/banner04.jpg"/></div>
+                </div>
               </div>
+              <div class="swiper-button-prev swiper-video-prev"></div>
+              <div class="swiper-button-next swiper-video-next"></div>
             </div>
-            <div class="img__wrap"><img src="../assets/images/index/banner.png"/></div>
-            <div class="img__arrow"><img src="../assets/images/index/arrow.png"/></div>
           </div>
         </section>
         <section class="about">
@@ -98,9 +119,13 @@
               <p>進一步了解我們</p>
             </div>
             <div class="text__bottom"><a href="moto.html">
+                <div class="bg bg__moto"></div>
                 <p>專屬機車貸款</p></a><a href="car.html">
+                <div class="bg bg__car"></div>
                 <p>專屬汽車貸款</p></a><a href="house.html">
+                <div class="bg bg__house"></div>
                 <p>專屬房屋二胎</p></a><a href="about.html">
+                <div class="bg bg__about"></div>
                 <p>關於熊蓋厚貸</p></a></div>
           </div>
         </section>
@@ -214,7 +239,7 @@
                 <div class="team__text">貸款顧問 Amy</div>
               </li>
             </ul>
-            <div class="link__wrap"><a class="link__more" href="team.html">More<i class="fa-solid fa-arrow-right"></i></a></div>
+            <div class="link__wrap"><a class="link__more" href="about.html">More<i class="fa-solid fa-arrow-right"></i></a></div>
           </div>
         </section>
         <section class="customer">

@@ -1,14 +1,38 @@
 mixin banner
     section.banner__home
         .container
-            .text__wrap
-                .text__inner
-                    .title 熊蓋厚貸
-                    .subtitle 專業貸款唯一指定品牌
+            //.text__wrap
+            //    .text__inner
+            //        .title 熊蓋厚貸
+            //        .subtitle 專業貸款唯一指定品牌
+            //
+            //.img__wrap
+            //    img(src="../assets/images/index/banner.png")
+            //
+            //
+            //.img__arrow
+            //    img(src="../assets/images/index/arrow.png")
 
-            .img__wrap
-                img(src="../assets/images/index/banner.png")
+
+            .swiper-banner.swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        .slide-inner
+                            img(src="../assets/images/index/banner01.jpg")
+
+                    .swiper-slide
+                        .slide-inner
+                            img(src="../assets/images/index/banner02.jpg")
+
+                    .swiper-slide
+                        .slide-inner
+                            img(src="../assets/images/index/banner03.jpg")
+
+                    .swiper-slide
+                        .slide-inner
+                            img(src="../assets/images/index/banner04.jpg")
 
 
-            .img__arrow
-                img(src="../assets/images/index/arrow.png")
+
+                .swiper-button-prev.swiper-video-prev
+                .swiper-button-next.swiper-video-next

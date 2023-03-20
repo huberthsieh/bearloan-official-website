@@ -52,8 +52,10 @@
         display: flex
         justify-content: space-between
         margin-bottom: 20px
+        position: relative
         +mobile()
-            display: block
+            //display: block
+            justify-content: unset
 
     &__item
         display: flex
@@ -64,9 +66,13 @@
         +mobile()
             width: 100%
             margin-bottom: 30px
+            display: block
 
         .img__wrap
             line-height: 1
             width: 100%
             img
                 width: 100%
+
+.swiper-info
+    position: relative

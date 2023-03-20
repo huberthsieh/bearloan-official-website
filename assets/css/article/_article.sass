@@ -132,40 +132,47 @@
         font-weight: 500
 
     &__title
-        font-size: 2rem
-        font-weight: 500
-        margin: 20px 0
+        font-size: 3.2rem
+        font-weight: 700
 
     &__content
         padding-bottom: 30px
         +mobile()
             padding-bottom: 20px
 
-        & > *
-            margin-bottom: 20px
-            font-size: 1.6rem
+        & *
+            //color: initial !important
+            //margin-bottom: 10px
 
         ul, ol
-            list-style-type: inherit
-            padding-left: 20px
+            list-style-type: auto
 
-        h2
-            font-size: 2.4rem
-            font-weight: 500
-            +mobile()
-                font-size: 2.2rem
+        span, p
+            font-size: 100%
 
-        h3
-            font-size: 2.2rem
-            font-weight: 500
-            +mobile()
-                font-size: 2rem
+        b, strong, font
+            font-size: 100%
+            font-weight: 700
 
-        h4
-            font-size: 2rem
-            font-weight: 500
-            +mobile()
-                font-size: 1.8rem
+
+
+        //h2
+        //    font-size: 2.4rem
+        //    font-weight: 500
+        //    +mobile()
+        //        font-size: 2.2rem
+        //
+        //h3
+        //    font-size: 2.2rem
+        //    font-weight: 500
+        //    +mobile()
+        //        font-size: 2rem
+        //
+        //h4
+        //    font-size: 2rem
+        //    font-weight: 500
+        //    +mobile()
+        //        font-size: 1.8rem
 
     .article__suggest
         border-top: solid 2px rgba(black, .1)

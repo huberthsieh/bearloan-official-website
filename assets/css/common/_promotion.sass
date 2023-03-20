@@ -1,0 +1,142 @@
+.service__banner
+    margin-bottom: -4px
+
+.promotion
+    .container
+        position: relative
+        z-index: 1
+        overflow: hidden
+        padding: 20px 0 50px 0
+        +mobile()
+            padding: 0 0 30px 0
+
+        .title__wrap
+            color: $main
+            padding: 30px 0
+
+    &.office
+        position: relative
+        overflow: hidden
+        .dec01
+            position: absolute
+            left: -2%
+            bottom: 15%
+
+        .dec02
+            position: absolute
+            right: -2%
+            top: 30%
+
+        .promotion__content
+            flex-wrap: wrap
+            img
+                width: 50%
+                padding: 10px
+                +mobile()
+                    width: 100%
+                    padding: 5px 20px 0
+    &__content
+        margin-bottom: 25px
+        display: flex
+        +mobile()
+            display: block
+
+    &__title
+        padding: 0 20px
+        +mobile()
+            padding: 20px 20px 10px
+
+        span, b
+            display: block
+            font-size: 3.2rem
+            font-weight: 500
+            width: 100%
+            color: #BE0F1A
+            +mobile()
+                font-size: 2.2rem
+
+    &__text
+        padding: 20px 0 0 0
+        font-size: 1.8rem
+        font-weight: 300
+        width: 100%
+        +mobile()
+            font-size: 1.6rem
+
+        span
+            width: 100%
+            display: inline
+            color: $red
+            font-weight: 500
+            font-size: 1.8rem
+            +mobile()
+                font-size: 1.6rem
+
+
+    &__list
+        display: flex
+        justify-content: space-between
+        +mobile()
+            padding: 0 30px
+            flex-wrap: wrap
+            justify-content: center
+
+    &__item
+        color: white
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        +mobile()
+            width: 50%
+            margin-bottom: 30px
+
+    &__icon
+        border: solid 1px white
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        +size(190px, 190px)
+
+        +mobile()
+            +size(130px, 130px)
+
+        i
+            &:before
+                font-size: 10rem
+                +mobile()
+                    font-size: 6.6rem
+
+    &__link
+        +size(190px, 190px)
+        border: solid 1px white
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 50px
+        position: relative
+
+        .notice__text
+            transform: translateX(-10px)
+
+        +mobile()
+            +size(130px, 130px)
+
+        &:before
+            content: ""
+            display: block
+            +size(20px, 20px)
+            border: solid 2px white
+            border-left: none
+            border-top: none
+            position: absolute
+            right: 30px
+            top: 50%
+            transform: translateY(-50%) rotate(-45deg)
+            +mobile()
+                right: 20px
+
+
+

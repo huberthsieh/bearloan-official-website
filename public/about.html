@@ -26,7 +26,7 @@
     <link href="./assets/css/style.css" rel="stylesheet">
   </head>
   <!-- Main-->
-  <body>
+  <body data-page="about">
     <header id="header">
       <nav class="header__inner">
         <h1 class="logo"><a class="img" href="index.html"></a></h1>
@@ -34,7 +34,7 @@
           <div class="pc__menu">
             <ul class="pc__menu__inner">
                             <li class="pc__menu__item"><a href="about.html"><span class="txt">關於我們</span></a></li>
-                            <li class="pc__menu__item"><a href="team.html"><span class="txt">專業團隊</span></a></li>
+              <!--+item('team.html', '專業團隊')-->
                             <li class="pc__menu__item"><a href="moto.html"><span class="txt">機車貸款</span></a></li>
                             <li class="pc__menu__item"><a href="car.html"><span class="txt">汽車貸款</span></a></li>
                             <li class="pc__menu__item"><a href="house.html"><span class="txt">房屋二胎</span></a></li>
@@ -84,6 +84,59 @@
             </div>
           </div>
         </section>
+        <section class="promotion">
+          <div class="container">
+            <div class="title__wrap">
+              <div class="subtitle">What We Do</div>
+              <div class="title">我們在做什麼事?</div>
+            </div>
+            <div class="promotion__content"><img src="../assets/images/about/promotion.gif" alt="推廣"/>
+              <div class="promotion__title"><span>讓我們幫你把不可能化為可能</span><b>把婉拒變成核准</b>
+                <div class="promotion__text">在這社會上其實有40%的人都無法向銀行借貸，就因為條件並不符合銀行的貸款規範，<span>但其實這並不表示您條件真的很差！</span><br/><br/>您可以依靠熊蓋厚貸團隊，來協助您順利取得資金，熊蓋厚貸為現今市場融資優質合作經銷，提供專業的貸款專案評估服務，會精準的幫客戶評估加分項目，大大提升核准率，能幫客戶順利將資金貸到手、、度過難關是我們最大的宗旨！</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="service__banner"><img src="../assets/images/about/banner02.jpg" alt="服務Banner"/></section>
+        <section class="notice">
+          <div class="container">
+            <div class="title__wrap">
+              <!--.subtitle Notice-->
+              <div class="title">專業團隊×全方位服務</div>
+            </div>
+            <div class="notice__content">
+              <p>熊蓋厚貸團隊人員具有20年以上的貸款送件資歷，受過專業的教育訓練能快速評估客戶的條件狀況。不僅有機車部門、汽車部門及房二胎部門，更有案件協商部門，積極的把握每個客戶過件的機會，協調和提高客戶核准率！</p>
+              <!--p.color--yellow 選擇熊蓋厚貸讓您百分之百安心-->
+            </div>
+            <ul class="notice__list">
+              <li class="notice__item">
+                <div class="notice__icon"><img src="../assets/images/about/svg01.svg" alt="服務"/><span class="mt-10">迅速掌握客戶痛點</span><span>滿意度遠勝同業</span></div>
+              </li>
+              <li class="notice__item">
+                <div class="notice__icon"><img src="../assets/images/about/svg02.svg" alt="服務"/><span class="mt-10">嚴守保密協定</span><span>保障客戶隱私</span></div>
+              </li>
+              <li class="notice__item">
+                <div class="notice__icon"><img src="../assets/images/about/svg03.svg" alt="服務"/><span class="mt-10">汽機車、房二胎</span><span>案件協商部門</span></div>
+              </li>
+              <li class="notice__item">
+                <div class="notice__icon"><img src="../assets/images/about/svg04.svg" alt="服務"/><span class="mt-10">深入分析客戶</span><span>規劃還款計畫</span></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="promotion">
+          <div class="container">
+            <div class="title__wrap">
+              <div class="title">協助每位客戶 找尋核准可能</div>
+            </div>
+            <div class="promotion__content"><img src="../assets/images/about/help.gif" alt="幫助"/>
+              <div class="promotion__title"><b>真實案例 解決客戶痛點</b>
+                <div class="promotion__text">台中的張先生是名職業水泥工，因為屬於臨時工性質，雖然日薪約三千左右，卻無薪轉及勞保證明，家人卻因病臨時急需開刀，為了籌促醫療費用張先生也曾向銀行詢問過貸款，卻因為條件及無法提出薪資證明而被婉拒。<br/><br/>張先生清楚的知道自己在銀行是不可能申請貸款，上網找尋了許多貸款單位，剛好找上了熊蓋厚貸，在專員詢問之下了解到張先生名下有一台貸款中的汽車，因此開始進行詳細評估，<span>還好張先生的車貸繳息都很正常，加上擁有丙級技術證照，在專員及熊蓋厚貸的案件協商部協助之下，成功利用這些項目以及現場工作照加分，順利核貸了60萬，讓張先生可以順利的籌促到費用。</span></div>
+              </div>
+            </div>
+            <div class="link__wrap link--main"><a class="link__more" href="article.html">More<i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+        </section>
         <section class="history">
           <div class="container">
             <div class="title__wrap">
@@ -123,22 +176,17 @@
             </div>
           </div>
         </section>
-        <section class="philosophy">
+        <section class="promotion office">
+          <div class="dec01"><img src="../assets/images/about/dec01.svg" alt="office"/></div>
+          <div class="dec02"><img src="../assets/images/about/dec02.svg" alt="office"/></div>
           <div class="container">
-            <div class="title__wrap white">
-              <div class="subtitle">philosophy</div>
-              <div class="title">經營理念</div>
+            <div class="title__wrap">
+              <div class="title">不僅給客戶優質服務<br/>也給團隊優質的工作環境</div>
             </div>
-            <div class="philosophy__inner">
-              <p>和鑫企劃強調誠信、親切、專業、創新的經營理念，並以健全的制度，健康的管理，引領團隊穩定成長，讓所有的員工都有一展長才的機會，並鼓勵各種創新想法實踐，在這裡您可以得到成就感，和鑫重視每位夥伴的專業貢獻，並給予實質的獎勵。 也希冀能以持續攀升的營運高峰，讓團隊每個人不再被經濟所困擾、為支出所擔憂，穩定賺到所希望的薪資！除了有良好工作環境、也提供學習及成長的空間。</p>
-              <p>秉持以下原則，以創造雙贏契機：</p>
-              <p>☑ 認真工作，持續成長，績效顯著，開心玩樂。</p>
-              <p>☑ 不斷提升自我金融專業知識。</p>
-              <p>☑ 深入分析客戶需求，打造雙贏。</p>
-              <p>☑ 以同理心為出發點，專業服務每位客戶。</p>
-            </div>
+            <div class="promotion__content"><img src="../assets/images/about/office01.jpg" alt="office"/><img src="../assets/images/about/office02.jpg" alt="office"/><img src="../assets/images/about/office03.jpg" alt="office"/><img src="../assets/images/about/office04.jpg" alt="office"/></div>
           </div>
         </section>
+        <!--+philosophy()-->
         <section class="activity">
           <div class="container">
             <div class="title__wrap color-main">
