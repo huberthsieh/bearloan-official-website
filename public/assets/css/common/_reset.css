@@ -25,21 +25,17 @@ a, button {
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul, menu {
+/*ol, ul, menu {*/
+/*    list-style: none;*/
+/*}*/
+
+menu, ol:not(.article__detail__content ol), ul:not(.article__detail__content ul) {
     list-style: none;
 }
 
 /* content edit */
 .article__detail__content ul, .article__detail__content ol {
-    list-style: auto;
-}
-
-.article__detail__content ul li, .article__detail__content ol li{
-    text-indent: 0 !important;
-}
-
-.article__detail__content ul, .article__detail__content ol {
-    list-style: auto;
+    /*list-style: auto;*/
 }
 
 .article__detail__content ul li, .article__detail__content ol li{
@@ -119,6 +115,14 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     font-size: 62.5%;
     vertical-align: baseline;
     background: transparent;
+}
+
+.article__detail__content * {
+    font-size: 100%;
+}
+
+.article__detail__content ol, .article__detail__content ul {
+    padding-inline-start: 24px !important;
 }
 
 body {
