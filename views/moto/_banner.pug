@@ -9,7 +9,19 @@ mixin banner
 
             .img__wrap
                 //img(src="../assets/images/moto/banner.png")
-                <video autoplay loop id="video-background" muted plays-inline>
-                    <source src="../assets/images/moto.mp4" type="video/mp4">
-                </video>
+                //<video autoplay loop id="video-background" muted plays-inline>
+                //    <source src="../assets/images/moto.mp4" type="video/mp4">
+                //</video>
+                //src="https://www.youtube.com/embed/HrdYJaOx5n0?mute=1&autoplay=1&loop=1&playlist=HrdYJaOx5n0"
+
+                .banner__video(
+                    id="youtubeEmbed"
+                    width="100%"
+                    height="100%"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    data-video-id="HrdYJaOx5n0"
+                )
 

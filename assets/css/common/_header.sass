@@ -30,6 +30,9 @@
         color: white
         position: relative
         z-index: 10
+        +mobile()
+            background-color: #fff
+            justify-content: center
 
     .logo
         +size(110px, 100%)
@@ -67,6 +70,10 @@
 
         +pad
             width: auto
+            position: absolute
+            right: 15px
+            top: 50%
+            transform: translateY(-50%)
 
 
     .pc__menu
@@ -147,7 +154,8 @@
                 +size(100%, 2px)
                 display: block
                 transition: all .4s
-                background-color: #fff
+                //background-color: #fff
+                background-color: $main
                 margin-top: 3px
 
 .modal
